@@ -90,7 +90,7 @@ export function Navigation() {
           </Col>
           <Col>
             <a
-              href='https://github.com/rockbenben/img-prompt'
+              href='https://ai.qvqai.xyz'
               target='_blank'
               rel='noopener noreferrer'
               style={{ marginLeft: "10px" }}>
