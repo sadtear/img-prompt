@@ -13,24 +13,24 @@ import { Menu, Row, Col } from "antd";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-const items: MenuProps["items"] = [
+/*const items: MenuProps["items"] = [
   {
     label: <Link href='/'>IMGPrompt</Link>,
     key: "/",
     icon: <BgColorsOutlined />,
   },
-  {
-    label: (
-      <a
-        href='https://newzone.top/posts/2022-09-05-stable_diffusion_ai_painting.html'
-        target='_blank'
-        rel='noopener noreferrer'>
-        Stable Diffusion 入门教程
-      </a>
-    ),
-    key: "LearnData",
-    icon: <ThunderboltOutlined />,
-  },
+  // {
+  //   label: (
+  //     <a
+  //       href='https://newzone.top/posts/2022-09-05-stable_diffusion_ai_painting.html'
+  //       target='_blank'
+  //       rel='noopener noreferrer'>
+  //       Stable Diffusion 入门教程
+  //     </a>
+  //   ),
+  //   key: "LearnData",
+  //   icon: <ThunderboltOutlined />,
+  // },
   {
     label: (
       <a
@@ -55,7 +55,7 @@ const items: MenuProps["items"] = [
     key: "Tools",
     icon: <ToolOutlined />,
   },
-];
+];*/
 
 export function Navigation() {
   const pathname = usePathname();
@@ -72,12 +72,12 @@ export function Navigation() {
           onClick={onClick}
           selectedKeys={[current]}
           mode='horizontal'
-          items={items}
+          // items={items}
         />
       </Col>
       <Col>
         <Row gutter={16} wrap={false}>
-          <Col xs={0} sm={0} md={18}>
+          <Col xs={0} sm={0} md={18} style={{ display: "none" }}>
             <a
               href='https://discord.gg/PZTQfJ4GjX'
               target='_blank'
